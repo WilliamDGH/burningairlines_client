@@ -50,7 +50,7 @@ class FlightsIndex extends Component {
           <td>{f.destination}</td>
           <td>{f.airplane}</td>
           <td>{f.rows * f.columns - f.booked_seats.length}</td>
-          <td><Link to={"/seats"/f.id}>Book</Link></td>
+          <td><Link to={`/seats/${f.id}`}>Book</Link></td>
           </tr>
          ) }
       </tbody>
